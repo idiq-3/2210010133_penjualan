@@ -28,8 +28,8 @@ class User extends CI_Controller {
     public function save()
     {
         $this->User_model->Save();
-        if($this->db->affected_row()>0){
-            $this->session->set_flashdate("succes","Data user berhasil di Simpan");
+        if($this->db->affected_rows()>0){
+            $this->session->set_flashdata("succes","Data user berhasil di Simpan");
         }
         redirect('user');
     }

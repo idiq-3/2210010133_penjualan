@@ -10,31 +10,31 @@
             <form action="<?php echo site_url('user/save')?>" method="post">
                 <div class="mb-3">
                     <label for="nik" class="form-label">NIK</label>
-                    <input type="text" class="form-control" id="nik" aria-describedby="emailHelp">
+                    <input type="text" class="form-control" id="nik" name="nik">
                 </div>
                 <div class="mb-3">
                     <label for="username" class="form-label">USERNAME</label>
-                    <input type="text" class="form-control" id="username">
+                    <input type="text" class="form-control" id="username" name="username">
                 </div>
                 <div class="mb-3">
                     <label for="fullname" class="form-label">FULL NAME</label>
-                    <input type="text" class="form-control" id="fullname">
+                    <input type="text" class="form-control" id="fullname" name="full_name">
                 </div>
                 <div class="mb-3">
                     <label for="phone" class="form-label">PHONE</label>
-                    <input type="text" class="form-control" id="phone">
+                    <input type="text" class="form-control" id="phone" name="phone">
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">EMAIL</label>
-                    <input type="text" class="form-control" id="email">
+                    <input type="text" class="form-control" id="email" name="email">
                 </div>
                 <div class="mb-3">
                     <label for="alamat" class="form-label">ALAMAT</label>
-                    <input type="TEXT" class="form-control" id="alamat">
+                    <input type="TEXT" class="form-control" id="alamat" name="alamat">
                 </div>
                 <div class="mb-3">
                     <label for="password" class="form-label">PASSWORD</label>
-                    <input type="password" class="form-control" id="password">
+                    <input type="password" class="form-control" id="password" name="password">
                 </div>
                 <div class="mb-3">
                     <label for="role" class="form-label">ROLE</label>

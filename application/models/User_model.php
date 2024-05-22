@@ -10,7 +10,7 @@ class User_model extends CI_Model
     {
         return $this->db->where('is_active', 1)->get($this->_table)->result();
     }
-    public function Save(){
+    public function save(){
         $data = array(
             'nik'=> htmlspecialchars($this->input->post('nik'), true),
             'username'=> htmlspecialchars($this->input->post('username'), true),

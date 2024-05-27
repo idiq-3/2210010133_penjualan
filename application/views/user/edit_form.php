@@ -7,7 +7,7 @@
         </ol>
         <div class="card mb-4">
         <div class="card-body">
-            <form action="<?php echo site_url('user/edit_form'); ?>" method="post">
+            <form action="<?php echo site_url('user/edit'); ?>" method="post">
                 <div class="mb-3">
                 <label for="username">USERNAME <code>*</code></label>
                 <input class="form-control" type="hidden" name="id" value="<?= $user->id; ?>" required>

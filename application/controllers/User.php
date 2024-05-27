@@ -42,4 +42,12 @@ class User extends CI_Controller {
         );
         $this->load->view('template/main',$data);
     }
+    public function edit()
+    {
+        $this->User_model->editData();
+        if($this->db->affected_rows()>0){
+            $this->session->set_flashdata("succes","Data user berhasil di Simpan");
+        }
+        redirect('user');
+    }
 }

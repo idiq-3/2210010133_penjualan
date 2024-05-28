@@ -46,7 +46,7 @@ class User_model extends CI_Model
     {
         $this->db->where('id',$id)->delete($this->_table);
         if($this->db->affected_rows()>0){
-            $this->session->set_flashdata("succes","Data user berhasil di Simpan");
+            $this->session->set_flashdata("succes","Data user Berhasil di Simpan");
         }
     }
 }

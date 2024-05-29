@@ -50,7 +50,7 @@ class User extends CI_Controller {
         }
         redirect('user');
     }
-    function delete($id)
+    function delete($id)    
     {
         $this->User_model->delete($id);
         redirect('user');

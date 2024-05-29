@@ -10,31 +10,31 @@
             <form action="<?php echo site_url('user/save')?>" method="post">
                 <div class="mb-3">
                     <label for="nik" class="form-label">NIK</label>
-                    <input type="text" class="form-control" id="nik" name="nik">
+                    <input type="text" class="form-control" id="nik" name="nik" placeholder="NIK">
                 </div>
                 <div class="mb-3">
                     <label for="username" class="form-label">USERNAME</label>
-                    <input type="text" class="form-control" id="username" name="username">
+                    <input type="text" class="form-control" id="username" name="username" placeholder="USERNAME">
                 </div>
                 <div class="mb-3">
                     <label for="fullname" class="form-label">FULL NAME</label>
-                    <input type="text" class="form-control" id="fullname" name="full_name">
+                    <input type="text" class="form-control" id="fullname" name="full_name" placeholder="FULL NAME">
                 </div>
                 <div class="mb-3">
                     <label for="phone" class="form-label">PHONE</label>
-                    <input type="text" class="form-control" id="phone" name="phone">
+                    <input type="text" class="form-control" id="phone" name="phone" placeholder="PHONE">
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">EMAIL</label>
-                    <input type="text" class="form-control" id="email" name="email">
+                    <input type="text" class="form-control" id="email" name="email" placeholder="EMAIL">
                 </div>
                 <div class="mb-3">
                     <label for="alamat" class="form-label">ALAMAT</label>
-                    <input type="TEXT" class="form-control" id="alamat" name="alamat">
+                    <input type="TEXT" class="form-control" id="alamat" name="alamat" placeholder="ALAMAT">
                 </div>
                 <div class="mb-3">
                     <label for="password" class="form-label">PASSWORD</label>
-                    <input type="password" class="form-control" id="password" name="password">
+                    <input type="password" class="form-control" id="password" name="password" placeholder="PASSWORD">
                 </div>
                 <div class="mb-3">
                     <label for="role" class="form-label">ROLE</label>

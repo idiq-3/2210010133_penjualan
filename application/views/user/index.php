@@ -7,7 +7,7 @@
          </ol>
          <div class="card mb-4">
              <div class="card-header">
-                 <a href="<?php echo site_url('user/add') ?>"><i class="fas fa-plus"></i>Add New</a>
+                 <a href="<?php echo site_url('user/add') ?>"><i class=" fas fa-plus"></i>Add New</a>
              </div>
              <?php if ($this->session->flashdata('success')) : ?>
                  <div class="alert alert-success" role="alert">

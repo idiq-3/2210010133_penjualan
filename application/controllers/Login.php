@@ -40,22 +40,23 @@ class Login extends CI_Controller
                 } elseif ($user['role'] == 'ADMIN') {
                     $this->_updateLastLogin($user['id']);
                     redirect('user');
-                }
                 } elseif ($user['role'] == 'KASIR') {
                     $this->_updateLastLogin($user['id']);
                     redirect('kasir');
+                } else{
+                    redirect('login');
                 }
-            } else {
-                // jika password salah
-                $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert"> <b> Password Salah. </b> </div>');
-                redirect('login');
-            }
-        } else {
-            // jika user tidak terdaftar
-            echo "User tidak terdaftar";
-            $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert"> <b>Error: </b> User Tidak Terdaftar. </div>');
+        }else {
+            // jika password salah
+            $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert"> <b> Password Salah. </b> </div>');
             redirect('login');
         }
+    } else {
+        // jika user tidak terdaftar
+        echo "User tidak terdaftar";
+        $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert"> <b>Error: </b> User Tidak Terdaftar. </div>');
+        redirect('login');
+    }}
     private function _updateLastLogin($userid)
     {
         $sql = "UPDATE user SET last_login=now() WHERE id=$userid";
@@ -67,7 +68,7 @@ class Login extends CI_Controller
         $this->session->sess_destroy();
         redirect(site_url('login'));
     }
-    publicfunction block()
+    public function block()
     {
         $data = array(
             'user' => infoLogin(),

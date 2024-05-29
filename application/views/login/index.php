@@ -10,7 +10,7 @@
     <link href="<?= base_url('assets/css/styles.css') ?>" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" crossorigin="anonymous"></script>
 </head>
-<body class="bg-primary">
+<body class="bg-dark">
     <div id="layoutAuthentication">
         <div id="layoutAuthentication_content">
             <main>

@@ -56,12 +56,23 @@ class Login extends CI_Controller
             $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert"> <b>Error: </b> User Tidak Terdaftar. </div>');
             redirect('login');
         }
-    }
-
     private function _updateLastLogin($userid)
     {
         $sql = "UPDATE user SET last_login=now() WHERE id=$userid";
         $this->db->query($sql);
     }
-
+    public function logout()
+    {
+        //hsncurkan semua sesi
+        $this->session->sess_destroy();
+        redirect(site_url('login'));
+    }
+    publicfunction block()
+    {
+        $data = array(
+            'user' => infoLogin(),
+            'title' => 'Access Denied'
+        );
+        $this->load->view('login/error404', $data);
+    }
 }
